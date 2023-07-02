@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("snankebg.jpg");
+ 
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-top: 30px;
+margin-left: 50px;
+ margin-right: 80px;
+
+}
+
+#scoreBox{
+position:  absolute;
+top: 50px;
+right: 400px;
+font-size: 39px;
+font-weight: bold;
+font-family: 'Satisfy', cursive;
+}
+
+
+h2{
+  position:  absolute;
+top: 120px;
+right: 180px;
+font-size: 39px;
+font-weight: bold;
+font-family: 'Satisfy', cursive;
+}
+    
+
+#board {
+
+    background: linear-gradient(rgb(187, 203, 144),rgb(63, 205, 70));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.head{
+    background:linear-gradient(red,yellow); /*snake head*/
+border: 2px solid purple;
+border-radius: 9px;
+
+}
+.snake{/*snake leftover portion till tail*/
+    background:linear-gradient(purple, black); 
+   
+    border: 0.25vmin solid white ; 
+   border-radius: 12px;
+}
+
+.food{   /* snake food*/
+    background:linear-gradient(red,purple);
+    border: 0.25vmin solid black;
+ border-radius: 8px;
+}
